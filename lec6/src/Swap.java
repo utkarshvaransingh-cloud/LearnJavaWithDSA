@@ -18,13 +18,13 @@ public class Swap {
     }
 
     static void changeName(String name){
-        name="Hanuman";
+        name="Hanuman"; // creating a new object
     }
 
-    static void swap(int a, int b){
-        int temp=a;
-        a=b;
-        b=temp;
-
+    static void swap(int num1, int num2){
+        int temp=num1;
+        num1=num2;
+        num2=temp;// it's not passing the reference of a and b, just passing the value of a and b...
+        // this change will only be valid in this function scope only 
     }
 }

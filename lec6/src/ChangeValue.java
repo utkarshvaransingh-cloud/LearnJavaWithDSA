@@ -11,6 +11,6 @@ public class ChangeValue {
     }
 
     static void change(int[] nums){
-        nums[0]=99;
+        nums[0]=99;// if you make a change to this ref variable, same object will be changed
     }
 }
