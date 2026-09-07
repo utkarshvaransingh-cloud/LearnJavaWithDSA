@@ -1,7 +1,7 @@
 package Arrays_Geek;
 
 public class MissingInArray {
-    int missingNum(int arr[]){
+    int missingNum(int arr[]){        
         long n=arr.length+1; // 1 to n tak numbers honge arr me...
         long sum=n*(n+1)/2;
         long arraySum=0;
@@ -9,5 +9,7 @@ public class MissingInArray {
             arraySum+=ele;
         }
         return (int)(sum-arraySum);
+
+        
     }
 }
