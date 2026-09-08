@@ -12,6 +12,19 @@ public class TwoSum {
                     }
                 }
             }
+
+            // optimized...using 2-pointer...
+            // Arrays.sort(arr);  // Array should be sorted..
+            int i=0,j=n-1;
+            while(i<j){
+                int sum=arr[i]+arr[j];
+                if(sum==target) true;
+                else if(sum>target) {
+                    arr[j--];
+                }else{
+                    arr[i++];
+                }
+            }
             return false;
         }
     }
