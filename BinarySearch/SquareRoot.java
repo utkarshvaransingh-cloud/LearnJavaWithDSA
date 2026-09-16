@@ -50,8 +50,17 @@ public class SquareRoot {
     */
     
     public static void main(String[] args) {
-        int 
+        int tar=20; 
+        int ans=-1;
         
+        int lo=1, hi=tar;
+        while(lo<=hi){
+            int mid=lo+(hi-lo)/2;
+            if(mid*mid==tar) return mid;
+            if(mid*mid>tar) hi=mid+1;
+            else if(mid*mid<tar) lo=mid+1; 
+        }
+        return hi; 
     }
 
 }
