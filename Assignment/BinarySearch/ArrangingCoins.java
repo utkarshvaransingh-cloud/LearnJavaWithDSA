@@ -1,3 +1,4 @@
+package Assignment.BinarySearch;
 public class ArrangingCoins {
     
     /*
