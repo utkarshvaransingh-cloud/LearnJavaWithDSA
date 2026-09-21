@@ -1,9 +1,13 @@
 public class CompareToStringMethod {
 
-    // public static int compareTo(String a, String b){
-        // write the method ... 
-    //     return -1;
-    // }
+    public static int compareTo(String a, String b){
+        int min=Math.min(a.length(),b.length());
+        for(int i=0; i<min; i++){
+            int diff=a.charAt(i) - b.charAt(i);
+            if(diff!=0) return diff; 
+        }
+        return a.length() - b.length();
+    }
     public static void main(String[] args) {
         String a, b;
         // a="raghav";
@@ -18,6 +22,20 @@ public class CompareToStringMethod {
         a="harshita";
         b="harsh";
         System.out.println(compareTo(a,b));
+
+
+        // concat()....
+
+        String y,z;
+        y="Pratap";
+        z="Singh";
+        // System.out.println(y.concat(z));
+        // a.concat(b);
+        // sout(a); // not going to concat; 
+
+        // we can do this ... but it will create a new string 
+        y=y.concat(z); // create a new string "PratapSingh"
+        System.out.println(y);
 
     }
 }
