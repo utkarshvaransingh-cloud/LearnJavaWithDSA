@@ -2,7 +2,7 @@
 
 /*
     substring ="ram"; // r, a, m, ra, am, ram
-    h.w.:  Sum of all substring of a number.. 
+     
 */
 public class PrintAllSubstring {
    public static void main(String[] args) {
